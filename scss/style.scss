@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+
+$fontUbuntu: 'Ubuntu', sans-serif;
+$fontIcon: 'Inconsolata', monospace;
+$light: #ffffff;
+$gray: #f0f0f0;
+$grayTetx: #626262;
+$grayTitle: #626262;
+$goldText: #b4ad9e;
+
+a, input, textarea, button {
+    outline: none;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.page {
+    &-light {
+        background-color: $light;
+    }
+    &-gray {
+        background-color: $gray;
+    }
+}
+
+.wrapper {
+    width: 1200px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2.5rem;
+    &__title {
+        font-family: $fontIcon;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+    &-nav-list {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        &-item {
+            margin-left: 7rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.top {
+    margin-top: 7.5rem;
+}
+
+.content {
+    &-text {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    &__text {
+        color: $goldText;
+        font-family: $fontUbuntu;
+        font-size: 14px;
+    }
+    &__title {
+        font-size: 30px;
+        color: $grayTitle;
+    }
+    &__mainTetx {
+        color: $grayTetx;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    &__comment {
+        font-family: $fontUbuntu;
+        font-size: 14px;
+        color: $goldText;
+        margin-top: 2rem;
+    }
+}
+
+.img {
+    &-xl {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &-l {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.bottom {
+    margin-bottom: 2rem;
+}
+
+.post {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+        max-width: 420px;
+        &_author {
+            color: $goldText;
+            text-transform: uppercase;
+        }
+        &__title {
+            font-size: 30px;
+            font-weight: 700;
+            color: $grayTitle;
+        }
+        &__text {
+            font-size: 14px;
+            color: $grayTetx;
+        }
+    }
+    &-bottom {
+        margin-bottom: 5%;
+    }
+}
+
+.form {
+    &__title {
+        padding-top: 100px;
+        text-align: center;
+        font-size: 30px;
+    }
+    &-main {
+        margin-top: 4.5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        position: relative;
+        &__input {
+            width: 40%;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid;
+            padding-left: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        &__btn {
+            position: absolute;
+            right: 30%;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.conteinet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-item {
+        width: 430px;
+        margin-right: 6rem;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &__author {
+        color: $goldText;
+        font-family: $fontUbuntu;
+        text-transform: uppercase;
+    }
+    &__title {
+        color: $grayTitle;
+        font-size: 30px;
+    }
+    &__text {
+        color: $grayTetx;
+        font-size: 14px;
+    }
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    &-links {
+        color: $goldText;
+        border: 1px solid $goldText;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-text {
+        display: flex;
+        &__text {
+            margin-right: 2rem;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    &-links-list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        &__text {
+            font-size: 14px;
+            margin-right: 1rem;
+        }
+        &-item {
+            margin-right: 1rem;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
